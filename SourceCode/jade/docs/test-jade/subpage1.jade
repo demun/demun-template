@@ -1,0 +1,17 @@
+extends ../../template/layout.jade
+
+//- doctype 변경
+append config
+	- var html5 = false
+	- var xthml = true
+	//- banner 영역 삭제
+	- var banner = false
+
+
+
+//- 문서의 제목을 subpage1 의 제목으로 변경
+block title
+	| subpage1
+
+
+

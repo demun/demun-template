@@ -1,0 +1,27 @@
+//- javascript
+if jQuery
+	script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+	script.
+		window.jQuery || document.write('<script src="/js/lib/jquery.min.js"><\/script>')
+//- plugin js
+
+if bootstrap
+	script(src='/plugins/bootstrap/js/bootstrap.min.js')
+
+if jqueryUi
+	script(src='/plugins/jquery-ui/jquery-ui.min.js')
+
+if bxslider
+	script(src='/plugins/bxSlider/jquery.bxslider.min.js')
+
+if magnificPopup
+	script(src='/plugins/magnific-popup/jquery.magnific-popup.min.js')
+
+if angular
+	script(src='/plugins/angular/angular.min.js')
+
+
+
+//- site js
+if commonjs
+	script(src='/js/common.js')

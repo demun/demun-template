@@ -1,0 +1,53 @@
+{
+  "name": "SiteName",
+  "version": "0.0.1",
+  "description": "사이트설명",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demun",
+    "키워드",
+    "mobile",
+    "keywords"
+  ],
+  "make": {
+    "company": "회사명",
+    "homepage": "http://test.com",
+    "publisher": "Ho, Jong-Mun",
+    "email": "hjm01@naver.com",
+    "blog": "http://demun.tistory.com"
+  },
+  "license": {
+    "type": "CC BY-ND",
+    "url": "http://creativecommons.org/licenses/by/2.0/kr/"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-csslint": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-livereload": "latest",
+    "grunt-contrib-requirejs": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-jade": "latest",
+    "grunt-csscomb": "latest",
+    "grunt-includes": "latest",
+    "grunt-newer": "latest",
+    "grunt-notify": "latest",
+    "grunt-requirejs": "latest",
+    "load-grunt-tasks": "latest",
+    "time-grunt": "latest"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "SiteName",
+  "version": "0.0.0",
+  "authors": [
+    "demun <hjm01@naver.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1"
+  },
+  "devDependencies": {
+    "bootstrap": "latest"
+  }
+}

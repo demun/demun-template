@@ -1,0 +1,35 @@
+extends ../../template/layout.jade
+
+append config
+	- var quick = false
+
+
+//- 문서제목 앞에 현제 제목 추가
+block prepend title
+	| 서브제목2... 
+
+//- 문서제목뒤에 현제 제목 추가
+block append title
+	| ...서브제목2  
+
+
+block header
+	div.header
+		include ../../template/bs-nav.jade
+
+block banner
+	div.container
+		div.row
+			include ../../template/banner.jade
+
+block main
+	div.container
+		div.row.main
+			div.wrapper
+				include ../../files/collapse.html
+				include ../../files/bootstrap.jade
+
+block footer
+	div.container
+		div.row
+			include ../../template/footer.jade

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+
+include "head.html"
+
+
+<title>title</title>
+</head>
+<body>
+
+<hr>
+
+<div class="container">
+	<div class="row">
+		<div class="test-bxSlider">
+		    <ul class="bxslider">
+		      <li><img src="http://bxslider.com/images/730_200/tree_root.jpg" title="Funky roots" /></li>
+		      <li><img src="http://bxslider.com/images/730_200/hill_road.jpg" title="The long and winding road" /></li>
+		      <li><img src="http://bxslider.com/images/730_200/trees.jpg" title="Happy trees" /></li>
+		      <li><img src="http://bxslider.com/images/730_200/tree_root.jpg" title="Funky roots" /></li>
+		      <li><img src="http://bxslider.com/images/730_200/hill_road.jpg" title="The long and winding road" /></li>
+		      <li><img src="http://bxslider.com/images/730_200/trees.jpg" title="Happy trees" /></li>
+		    </ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- js -->
+include "js.html"
+
+
+<script>
+	$('.test-bxSlider .bxslider').bxSlider({
+	    mode: 'fade',
+	    captions: true
+	    // 자동일경우 auto, 기본 멈춤
+	    // auto: false,
+	    // autoControls: true,
+	    // pager: false,
+	    // minSlides: 4,
+	    // maxSlides: 4,
+	    // slideWidth: 170,
+	    // sliderMargin: 0
+	});
+</script>
+
+
+
+</body>
+</html>

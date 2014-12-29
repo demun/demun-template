@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+
+include "head.html"
+
+
+<title>title</title>
+
+<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+/*	.container {
+	  background: #EEE;
+	  width: 50%;
+	  margin-bottom: 20px;
+	}*/
+
+	.item {
+	  width:  60px;
+	  height: 60px;
+	  float: left;
+	  border: 1px solid;
+	  background: #09F;
+	}
+
+	.item.w2 { width: 120px; }
+	.item.w3 { width: 180px; }
+	.item.w4 { width: 240px; }
+
+	.item.h2 { height: 100px; }
+	.item.h3 { height: 160px; }
+	.item.h4 { height: 220px; }
+	.item.h5 { height: 280px; }
+
+	.stamp {
+	  background: red;
+	  opacity: 0.75;
+	  position: absolute;
+	  border: 1px solid;
+	}
+</style>
+
+</head>
+<body>
+
+<hr>
+
+
+
+  <h1>flexslider</h1>
+
+<section class="slider">
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+	    <img src="/plugins/FlexSlider/demo/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+	</li>
+	<li>
+	    <img src="/plugins/FlexSlider/demo/images/kitchen_adventurer_lemon.jpg" />
+	</li>
+	<li>
+	    <img src="/plugins/FlexSlider/demo/images/kitchen_adventurer_donut.jpg" />
+	</li>
+	<li>
+	    <img src="/plugins/FlexSlider/demo/images/kitchen_adventurer_caramel.jpg" />
+	</li>
+  </ul>
+</div>
+</section>
+
+
+<!-- js -->
+include "js.html"
+
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+</html>
