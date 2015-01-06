@@ -315,11 +315,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'clean:server',
-      'less',
-      'autoprefixer',
-      'csscomb',
-      'concurrent:server',
+      'build',
       'connect',
       'watch'
     ]);
