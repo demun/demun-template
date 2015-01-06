@@ -12,10 +12,11 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
     "jquery": "1.9.1"
   },
-  "devDependencies": {
-    "bootstrap": "latest"
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "bxSlider": "*"
   }
 }

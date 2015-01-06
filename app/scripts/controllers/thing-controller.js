@@ -1,0 +1,1 @@
+console.log('controller/thing-controller js test');
