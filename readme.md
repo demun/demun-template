@@ -18,15 +18,47 @@ tem.sh projectFolder
 
 Gruntfile.js, bower.json, grunt serve 실행됨.
 
+
+
+grunt 에서 설치되는 모듈
+
+```
+npm install grunt grunt-usemin grunt-filerev grunt-contrib-concat grunt-contrib-uglify grunt-contrib-cssmin time-grunt load-grunt-tasks grunt-contrib-clean grunt-contrib-copy grunt-includes grunt-contrib-less jshint-stylish grunt-concurrent grunt-contrib-watch grunt-newer grunt-notify grunt-csscomb grunt-contrib-csslint grunt-contrib-jshint grunt-contrib-connect grunt-contrib-livereload grunt-wiredep grunt-autoprefixer grunt-contrib-imagemin
+```
+
+
+bower 에서 설치되는 플러그인
+
+```
+bower install jquery bootstrap jquery-ui jquery-colorbox magnific-popup massmans-bxslider 
+```
+
+미리 제작되어져 있는 파일들
+
+```
+less/
+
+
+
 -------
+
+
+
+
 
 # bower
 
 
 
+
+
 ## scripts/vendor.js
 
+
+
 - jquery
+
+jquery 는 vender.js 로 사용
 
 
 ```html
@@ -39,11 +71,14 @@ Gruntfile.js, bower.json, grunt serve 실행됨.
 ## scripts/plugins.js
 
 
+plugins.js 로 병합되는 자바스크립트
+
 
 
 - bootstrap
 
-jquery 종속
+fonts 복사해야됨.
+
 
 ```html
 <!-- css file -->
@@ -64,13 +99,29 @@ jquery 종속
 <script src="bower_components/bootstrap/js/tab.js"></script>
 ```
 
+Gruntfile.js 에서 이미지 복사해야됨.
+
+
+```javascript
+// bootstrap fonts
+{
+    expand: true,
+    dot: true,
+    cwd: 'bower_components/bootstrap/dist',
+    src: 'fonts/*',
+    dest: '<%= config.dist %>'
+}
+```
+
+
+
+
 
 
 
 - jquery ui
 
-jquery ui 의 경로의 문제가 있음. images/icon.png
-이미지 복사해야됨.
+이미지 복사.
 
 
 ```html
@@ -81,14 +132,32 @@ jquery ui 의 경로의 문제가 있음. images/icon.png
 <script src="bower_components/jquery-ui/jquery-ui.js"></script>
 ```
 
-less 폴더에 경로 수정해서 jquery-ui.less 만들어 놓음
+Gruntfile.js 에서 이미지 복사해야됨.
+
+
+```javascript
+// jquery ui 사용시
+{
+    expand: true,
+    dot: true,
+    cwd: 'bower_components/jquery-ui/themes/smoothness/',
+    dest: '<%= config.dist %>/styles',
+    src: 'images/*'
+}
+```
+
+
+
+
+
+
 
 
 - bxSlider
 
 bxSlider 는 massmans-bxslider 사용    
 https://github.com/massimans/bxslider-4    
-jquery 종속     
+
 
 
 ```html
@@ -102,15 +171,16 @@ jquery 종속
 
 <!-- 사용법 -->
 <ul class="bxslider">
-	<li><img src="/images/pic1.jpg" /></li>
-	<li><img src="/images/pic2.jpg" /></li>
-	<li><img src="/images/pic3.jpg" /></li>
-	<li><img src="/images/pic4.jpg" /></li>
+    <li><img src="/images/pic1.jpg" /></li>
+    <li><img src="/images/pic2.jpg" /></li>
+    <li><img src="/images/pic3.jpg" /></li>
+    <li><img src="/images/pic4.jpg" /></li>
 </ul>
 ```
 
 
-복사해야할 파일: Gruntfile.js
+Gruntfile.js 에서 이미지 복사해야됨.
+
 
 ```javascript
 {
@@ -125,15 +195,18 @@ jquery 종속
 ```
 
 
+plugins 를 사용할경우 html 에서 아래구문 추가해야 됨
+
+```html
+<script src="bower_components/massmans-bxslider/plugins/jquery.easing.1.3.js"></script>
+<script src="bower_components/massmans-bxslider/plugins/jquery.fitvids.js"></script>
+```
+
 
 
 
 
 - colorbox
-
-경로의 문제가 있음. images/image.png
-
-less 에 colorbox1 ~ colorbox5 까지 경로 변경해서 만들어놓음
 
 
 
@@ -146,7 +219,7 @@ less 에 colorbox1 ~ colorbox5 까지 경로 변경해서 만들어놓음
 ```
 
 
-복사해야할 파일: Gruntfile.js
+Gruntfile.js 에서 이미지 복사해야됨.
 
 ```javascript
 {
@@ -159,6 +232,11 @@ less 에 colorbox1 ~ colorbox5 까지 경로 변경해서 만들어놓음
     ]
 }
 ```
+
+
+
+
+
 
 
 - magnific-popup

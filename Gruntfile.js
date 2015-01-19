@@ -200,7 +200,15 @@ module.exports = function (grunt) {
     copy: {
       dist: {
         files: [
-        // bxslider
+        // 나눔고딕 폰트 사용시 
+        {
+            expand: true,
+            dot: true,
+            cwd: '<%= config.app %>/fonts/',
+            src: '**',
+            dest: '<%= config.dist %>/fonts/'
+        },
+        // bxslider 사용시
         {
             expand: true,
             dot: true,
@@ -210,15 +218,23 @@ module.exports = function (grunt) {
                 '*.{ico,png,gif}'
             ]
         },
-        // colorbox
+        // jquery ui 사용시
         {
             expand: true,
             dot: true,
-            cwd: 'bower_components/jquery-colorbox/example5/images',
-            dest: '<%= config.dist %>/images',
-            src: [
-                '*.{ico,png,gif}'
-            ]
+            cwd: 'bower_components/jquery-ui/themes/smoothness/',
+            dest: '<%= config.dist %>/styles',
+            src: 'images/*'
+        },
+        // colorbox 사용시
+        // 1.여기서 example 번호 변경
+        // 2.html 에서 example 번호로 css 경로 변경
+        {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/jquery-colorbox/example5/',
+            dest: '<%= config.dist %>/styles',
+            src: 'images/*'
         },
         // bootstrap fonts
         {
