@@ -18,6 +18,7 @@ tem.sh projectFolder
 
 Gruntfile.js, bower.json, grunt serve 실행됨.
 
+-------
 
 # bower
 
@@ -28,7 +29,7 @@ Gruntfile.js, bower.json, grunt serve 실행됨.
 - jquery
 
 
-```
+```html
 <script src="bower_components/jquery/jquery.js"></script>
 ```
 
@@ -44,7 +45,7 @@ Gruntfile.js, bower.json, grunt serve 실행됨.
 
 jquery 종속
 
-```
+```html
 <!-- css file -->
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
@@ -72,7 +73,7 @@ jquery ui 의 경로의 문제가 있음. images/icon.png
 이미지 복사해야됨.
 
 
-```
+```html
 <!-- css file -->
 <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css">
 
@@ -90,7 +91,7 @@ https://github.com/massimans/bxslider-4
 jquery 종속     
 
 
-```
+```html
 <!-- css file -->
 <link href="bower_components/massmans-bxslider/jquery.bxslider.css" rel="stylesheet" />
 
@@ -136,7 +137,7 @@ less 에 colorbox1 ~ colorbox5 까지 경로 변경해서 만들어놓음
 
 
 
-```
+```html
 <!-- css file -->
 <link rel="stylesheet" href="bower_components/jquery-colorbox/example5/colorbox.css">
 
@@ -164,7 +165,7 @@ less 에 colorbox1 ~ colorbox5 까지 경로 변경해서 만들어놓음
 
 
 
-```
+```html
 <!-- css file -->
 <link rel="stylesheet" href="bower_components/magnific-popup/magnific-popup.css">
 
