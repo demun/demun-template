@@ -1,1 +1,0 @@
-console.log('views/thing-view.js test');
