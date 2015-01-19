@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+
+include "head.html"
+
+
+<title>onepage scroll</title>
+
+<style>
+
+html,body { width: 100%; height: 100%; }
+
+.section {
+	width: 100%;
+	height: 100%;
+}
+.s1 { background-color: #999; }
+.s2 { background-color: #ddd; }
+.s3 { background-color: #ccc; }
+
+
+</style>
+
+</head>
+<body>
+
+<!-- 
+	http://www.thepetedesign.com/demos/onepage_scroll_demo.html 
+	https://github.com/NUKnightLab/TimelineJS
+-->
+
+<div class="main">
+	<section class="s1">
+		<h1><a href="">section1</a></h1>
+	</section>
+
+	<section class="s2">
+		<h1><a href="">section2</a></h1>
+	</section>
+
+	<section class="s3">
+		<h1><a href="">section3</a></h1>
+	</section>
+</div>
+
+
+<!-- js -->
+include "js.html"
+
+
+<script>
+	$(".main").onepage_scroll();
+</script>
+
+
+
+</body>
+</html>

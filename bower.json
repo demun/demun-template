@@ -1,0 +1,25 @@
+{
+  "name": "SiteName",
+  "version": "0.0.0",
+  "authors": [
+    "demun <hjm01@naver.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "1.9.0"
+  },
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "jquery-ui": "*",
+    "jquery-colorbox": "*",
+    "magnific-popup": "*",
+    "massmans-bxslider": "*"
+  }
+}

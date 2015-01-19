@@ -1,0 +1,1 @@
+console.log('main.js watch 테스트');
