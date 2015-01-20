@@ -33,10 +33,7 @@ bower 에서 설치되는 플러그인
 bower install jquery bootstrap jquery-ui jquery-colorbox magnific-popup massmans-bxslider 
 ```
 
-미리 제작되어져 있는 파일들
 
-```
-less/
 
 
 
@@ -55,6 +52,11 @@ less/
 ## scripts/vendor.js
 
 
+scripts 폴더에 vendor.js 로 사용되는 스크립트
+
+
+
+
 
 - jquery
 
@@ -71,7 +73,7 @@ jquery 는 vender.js 로 사용
 ## scripts/plugins.js
 
 
-plugins.js 로 병합되는 자바스크립트
+scripts 폴더에 plugins.js 로 병합되는 자바스크립트
 
 
 
@@ -264,9 +266,10 @@ Gruntfile.js 에서 이미지 복사해야됨.
 ## scripts/scripts.js
 
 
+scripts 폴더에 scripts.js 로 병합되는 자바스크립트
 
-사이트에서 사용하는 사용자 js     
-빌드후 scripts.js 로 만들어짐.
+
+사이트에서 사용하는 사용자 js 로 빌드후 scripts.js 로 만들어짐.
 
 
 
