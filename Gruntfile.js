@@ -24,15 +24,6 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*\n' +
-        ' ======================================================================== \n' +
-        ' * Project   : <%= pkg.name %>(<%= pkg.description %>) v<%= pkg.version %>\n' +
-        ' * Producer  : <%= pkg.make.company %>, <%= pkg.make.homepage %>\n' +
-        ' * Publisher : <%= pkg.make.publisher %>, <%= pkg.make.blog %>, <%= pkg.make.email %>\n' +
-        ' * Update    : <%= grunt.template.today("yyyy-mm-dd") %>\n' +
-        ' * License   : <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
-        ' ======================================================================== \n' +
-        ' */\n',
 
     // Project settings
     config: appConfig,
@@ -66,9 +57,6 @@ module.exports = function (grunt) {
 
     less: {
         docs: {
-            options: {
-                banner: '<%= banner %>'
-            },
             src: '<%= config.app %>/less/style.less',
             dest: '.tmp/styles/main.css'
         },
@@ -136,7 +124,7 @@ module.exports = function (grunt) {
     watch: {
         bower: {
             files: ['bower.json'],
-            tasks: ['newer:jshint']
+            tasks: ['wiredep']
         },
         gruntfile: {
             files: ['Gruntfile.js'],
