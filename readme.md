@@ -30,14 +30,42 @@ jquery bootstrap jquey-ui bxslider colorbox magnific-popup
 grunt 에서 설치되는 모듈
 
 ```
-npm install grunt grunt-usemin grunt-filerev grunt-contrib-concat grunt-contrib-uglify grunt-contrib-cssmin time-grunt load-grunt-tasks grunt-contrib-clean grunt-contrib-copy grunt-includes grunt-contrib-less jshint-stylish grunt-concurrent grunt-contrib-watch grunt-newer grunt-notify grunt-csscomb grunt-contrib-csslint grunt-contrib-jshint grunt-contrib-connect grunt-contrib-livereload grunt-wiredep grunt-autoprefixer grunt-contrib-imagemin
+grunt 
+grunt-contrib-csslint 
+grunt-contrib-cssmin 
+grunt-contrib-clean 
+grunt-contrib-concat 
+grunt-contrib-connect 
+grunt-contrib-copy 
+grunt-contrib-jshint 
+grunt-contrib-imagemin 
+grunt-contrib-less 
+grunt-contrib-livereload 
+grunt-contrib-uglify 
+grunt-contrib-watch 
+grunt-autoprefixer 
+grunt-concurrent 
+grunt-includes 
+grunt-filerev 
+grunt-newer 
+grunt-notify 
+grunt-usemin 
+grunt-wiredep 
+jshint-stylish 
+load-grunt-tasks 
+time-grunt 
 ```
 
 
 bower 에서 설치되는 플러그인
 
 ```
-bower install jquery bootstrap jquery-ui jquery-colorbox magnific-popup massmans-bxslider 
+jquery 
+bootstrap 
+jquery-ui 
+jquery-colorbox 
+magnific-popup 
+massmans-bxslider 
 ```
 
 
