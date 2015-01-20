@@ -19,6 +19,13 @@ tem.sh projectFolder
 Gruntfile.js, bower.json, grunt serve 실행됨.
 
 
+여기서 설치되는 모듈
+
+```
+jquery bootstrap jquey-ui bxslider colorbox magnific-popup
+```
+
+
 
 grunt 에서 설치되는 모듈
 

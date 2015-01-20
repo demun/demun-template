@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-// npm install --save-dev grunt grunt-contrib-csslint grunt-usemin grunt-filerev grunt-contrib-concat grunt-contrib-uglify grunt-contrib-cssmin time-grunt load-grunt-tasks grunt-contrib-clean grunt-contrib-copy grunt-includes grunt-contrib-less jshint-stylish grunt-concurrent grunt-contrib-watch grunt-newer grunt-notify grunt-csscomb grunt-contrib-jshint grunt-contrib-connect grunt-contrib-livereload grunt-wiredep grunt-autoprefixer grunt-contrib-imagemin grunt-filerev
+// npm install --save-dev grunt grunt-contrib-csslint grunt-usemin grunt-filerev grunt-contrib-concat grunt-contrib-uglify grunt-contrib-cssmin time-grunt load-grunt-tasks grunt-contrib-clean grunt-contrib-copy grunt-includes grunt-contrib-less jshint-stylish grunt-concurrent grunt-contrib-watch grunt-newer grunt-notify grunt-contrib-jshint grunt-contrib-connect grunt-contrib-livereload grunt-wiredep grunt-autoprefixer grunt-contrib-imagemin grunt-filerev
 
   'use strict';
 
@@ -90,18 +90,7 @@ module.exports = function (grunt) {
             src: '<%= less.docs.dest %>'
         }
     },
-    csscomb: {
-        options: {
-            config: '<%= config.gruntfile %>/.csscomb.json'
-        },
 
-        dist: {
-            expand: true,
-            cwd: '.tmp/styles/',
-            src: ['*.css', '!*.min.css'],
-            dest: '.tmp/styles/'
-        }
-    },
     includes: {
         build: {
             cwd: '<%= config.app %>/html/docs/',
@@ -167,7 +156,7 @@ module.exports = function (grunt) {
         },
         less: {
             files: ['<%= config.app %>/less/**/*.less'],
-            tasks: ['useminPrepare','less','autoprefixer','csscomb','concat','uglify','cssmin','usemin:css']
+            tasks: ['useminPrepare','less','autoprefixer','concat','uglify','cssmin','usemin:css']
         },
         html: {
             files: ['<%= config.app %>/html/**/*.html'],
@@ -291,7 +280,6 @@ module.exports = function (grunt) {
     'includes',
     'less',
     'autoprefixer',
-    'csscomb',
     'concurrent:dist',
     'concat',
     'cssmin',
