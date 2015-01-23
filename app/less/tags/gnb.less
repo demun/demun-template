@@ -1,0 +1,75 @@
+
+/* 
+---------------------------------------------------------------
+*
+* gnb.less
+*
+---------------------------------------------------------------
+*/
+
+.gnb {
+  position: relative;
+  z-index: 13;
+  float: right;
+  margin-top: 15px;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .clearfix();
+
+    li {
+      float: left;
+      position: relative;
+
+        a {
+          display: block;
+          padding: 18px 20px 20px;
+          font-size: 18px;
+          font-weight: bold;
+          &:hover {
+            color: @blue;
+            text-decoration: none;
+          }
+        }
+ 
+        ul {
+          display: none;
+          padding-top: 20px;
+          padding-bottom: 14px;
+          position: absolute;
+          left: 0;
+          top: 60px;
+
+          li {
+              // border-left: 1px solid #d6d6d6;
+              line-height: 25px; 
+              a {
+                  padding-left: 35px;
+                  padding-top: 0;
+                  padding-bottom: 0;
+                  width: 200px;
+                  font-size: 14px;
+                  font-weight: normal;
+                  color: #666;
+                  background: url(../images/icon-bullet.gif) no-repeat 25px center;
+                  &:hover {
+                      color: @blue;
+                      text-decoration: underline;
+                  }
+              }
+          }
+
+        }
+
+    }
+  }
+
+
+  .gnbul-01 li a {
+    width: 230px;
+  }
+} //gnb
+
+

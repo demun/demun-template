@@ -6,4 +6,94 @@
 ---------------------------------------------------------------
 */
 
+.header {
+	position: relative;
+	width: 100%;
+}
+
+// top-menu
+.top-menu {
+	width: 100%;
+	background: #e4e4e4;
+	.clearfix();
+}
+.top-menu-list {
+	float: right;
+	.ulstyle();
+	.clearfix();
+
+	li {
+		float: left;
+
+		a {
+			float: left;
+			display: block;
+			font-size: 12px;
+			color: #000;
+			padding: 8px 30px;
+			text-decoration: none;
+
+			&.all-menu {
+				background: #4b7697;
+				color: #fff;
+
+				img {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+// header-main
+.header-main {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	// margin-top: 50px;
+
+	.gnb-bg {
+		width: 100%;
+		z-index: 10;
+		position: absolute;
+		top: 83px;
+		height: 0;
+		background: #f7f7f7;
+		// height: 180px;
+		&.gnbBg {
+			height: 230px;
+			border-bottom: 1px solid #666;
+		}
+
+		.gnb-img {
+			display: none;
+			margin-top: 17px;
+		}
+	}
+
+	.mainmenu {
+	    z-index: 11;
+	    background-position: left bottom;
+	    background-repeat: no-repeat;
+
+		.logo {
+			float: left;
+			width: 250px;
+			margin: 10px 0 30px;
+
+			a {
+				display: block;
+			}
+
+		}
+	}
+
+
+}
+
+
 

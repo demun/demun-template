@@ -51,15 +51,40 @@ module.exports = function (grunt) {
         all: [
             'Gruntfile.js',
             '<%= config.app %>/scripts/{,*/}*.js',
-            '!<%= config.app %>/scripts/vendor/*'
+            '!<%= config.app %>/scripts/style-switcher.js',
+            '!<%= config.app %>/scripts/tweetscroll.js'
         ]
     },
 
     less: {
         docs: {
-            src: '<%= config.app %>/less/style.less',
-            dest: '.tmp/styles/main.css'
+            src: '<%= config.app %>/less/industry/template-style.less',
+            dest: '.tmp/styles/template-style.css'
         },
+        colorDefault: {
+            src: '<%= config.app %>/less/industry/color-default.less',
+            dest: '.tmp/styles/color-default.css'
+        },
+        linecons: {
+            src: '<%= config.app %>/less/industry/linecons.less',
+            dest: '.tmp/styles/linecons.css'
+        },
+        pixons: {
+            src: '<%= config.app %>/less/industry/pixons.less',
+            dest: '.tmp/styles/pixons.css'
+        },
+        responsive: {
+            src: '<%= config.app %>/less/industry/responsive.less',
+            dest: '.tmp/styles/responsive.css'
+        },
+        retina: {
+            src: '<%= config.app %>/less/industry/retina.less',
+            dest: '.tmp/styles/retina.css'
+        },
+        styleSwitcher: {
+            src: '<%= config.app %>/less/industry/style-switcher.less',
+            dest: '.tmp/styles/style-switcher.css'
+        }
     },
     autoprefixer: {
          options: {
@@ -75,7 +100,7 @@ module.exports = function (grunt) {
             ]
         },
         docs: {
-            src: '<%= less.docs.dest %>'
+            src: '.tmp/styles/{,*/}*.css'
         }
     },
 
@@ -177,42 +202,86 @@ module.exports = function (grunt) {
     copy: {
       dist: {
         files: [
-        // 나눔고딕 폰트 사용시 
+        // // 나눔고딕 폰트 사용시 
+        // {
+        //     expand: true,
+        //     dot: true,
+        //     cwd: '<%= config.app %>/fonts/NanumGothic',
+        //     src: '*.*',
+        //     dest: '<%= config.dist %>/fonts/'
+        // },
+        // fontawesome
         {
             expand: true,
             dot: true,
-            cwd: '<%= config.app %>/fonts/',
-            src: '**',
-            dest: '<%= config.dist %>/fonts/'
+            cwd: 'bower_components/fontawesome/fonts',
+            dest: '<%= config.dist %>/fonts',
+            src: ['*.*']
         },
-        // bxslider 사용시
+        // slider-revolution - assets, font, images
         {
             expand: true,
             dot: true,
-            cwd: 'bower_components/massmans-bxslider/images',
+            cwd: 'bower_components/slider-revolution/src/assets',
+            dest: '<%= config.dist %>/assets',
+            src: ['**/*.*']
+        },
+        {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/slider-revolution/src/font',
+            dest: '<%= config.dist %>/fonts',
+            src: ['**/*.*']
+        },
+        {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/slider-revolution/src/images',
             dest: '<%= config.dist %>/images',
+            src: ['**/*.*']
+        },
+        // owl-carousel
+        {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/owl-carousel/owl-carousel/',
+            dest: '<%= config.dist %>/styles',
             src: [
-                '*.{ico,png,gif}'
+                '*.{gif,png}'
             ]
         },
-        // jquery ui 사용시
+        // ResponsiveMultiLevelMenu
         {
-            expand: true,
-            dot: true,
-            cwd: 'bower_components/jquery-ui/themes/smoothness/',
-            dest: '<%= config.dist %>/styles',
-            src: 'images/*'
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/ResponsiveMultiLevelMenu/fonts',
+          src: ['*.{.eot,svg,ttf,woff}'],
+          dest: '<%= config.dist %>/fonts'
         },
-        // colorbox 사용시
-        // 1.여기서 example 번호 변경
-        // 2.html 에서 example 번호로 css 경로 변경
         {
-            expand: true,
-            dot: true,
-            cwd: 'bower_components/jquery-colorbox/example5/',
-            dest: '<%= config.dist %>/styles',
-            src: 'images/*'
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/ResponsiveMultiLevelMenu/images',
+          src: '*.png',
+          dest: '<%= config.dist %>/images'
         },
+        // linecons
+        {
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>/fonts/linecons',
+          src: ['*.{.eot,svg,ttf,woff}'],
+          dest: '<%= config.dist %>/fonts'
+        },
+        // pixons
+        {
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>/fonts/pixons',
+          src: ['*.{.eot,svg,ttf,woff}'],
+          dest: '<%= config.dist %>/fonts'
+        },
+
         // bootstrap fonts
         {
           expand: true,

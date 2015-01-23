@@ -1,52 +1,63 @@
 // style.less
 // ------------------------------------
 
+// webfont
+// @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 
 // bootstrap variables and mixins
-@import "../../bower_components/bootstrap/less/mixins.less";
-@import "../../bower_components/bootstrap/less/variables.less";
+@import "bs/mixins.less";
+@import "bs/variables.less";
 
 
+// bootstrap
+// @import "bs/normalize.less";
+// @import "bs/print.less";
+// @import "bs/utilities.less";
 
-// variables and mixins
+
+// site variables and mixins
 @import "common/mixins.less";
-@import "common/variabes.less";
+@import "common/variables.less";
 
 
-// webfont
-// @import url(common/nanumgothic.less);
-
-
-// global
+// common
+// @import "common/reset.less";
+@import "common/nanumgothic.less";
 @import "common/common.less";
+@import "common/helperClass.less";
 
 
 // plugins
-// colorbox example
-// @import "plugins/colorbox1.less";
-// @import "plugins/colorbox2.less";
-// @import "plugins/colorbox3.less";
-// @import "plugins/colorbox4.less";
-// @import "plugins/colorbox5.less";
-
-
-// ul
-@import "ui/tab.less";
-@import "ui/table.less";
-@import "ui/button.less";
+// @import "plugins/magnific-popup.less";
+// @import "plugins/jquery.bxslider.less";
 
 
 // tags
+@import "tags/mainpage.less";
+@import "tags/main.less";
+@import "tags/banner.less";
+// @import "tags/breadcrumb.less";
 @import "tags/header.less";
-@import "tags/contents.less";
-@import "tags/lnb.less";
+@import "tags/gnb.less";
 @import "tags/footer.less";
+@import "tags/lnb.less";
+@import "tags/contents.less";
+// @import "tags/quick.less";
+@import "tags/paging.less";
 
 
-// publisher, 공동으로 작업할때를 대비
-@import "custom/publisher1.less";
-// @import "custom/publisher2.less";
+
+// ui
+@import "ui/table.less";
+@import "ui/tab.less";
+@import "ui/button.less";
+// @import "ui/qna.less";
+// @import "ui/faq.less";
+@import "ui/form.less";
 
 
-// responsive
-// @import "custom/responsive.less";
+// publisher
+@import "publisher/publisher1.less";
+@import "publisher/publisher2.less";
+

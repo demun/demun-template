@@ -5,3 +5,53 @@
 *
 ---------------------------------------------------------------
 */
+
+
+.footer {
+	position: relative;
+	width: 100%;
+	background-color: #545454;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	.clearfix();
+
+	.pull-left {
+		width: @lnb-width;
+		margin-top: -5px;
+	}
+
+	.pull-right {
+		width: @content-width;
+		font-size: 12px;
+	}
+
+	.footer-menu {
+		.ulstyle();
+		.clearfix();
+
+		li {
+			float: left;
+			line-height: 10px;
+
+			&:first-child a {
+				border-left: 0;
+				padding-left: 0;
+			}
+
+			a {
+				display: block;
+				float: left;
+				color: #ccc;
+				
+				border-left: 1px solid #ccc;
+				padding: 0 10px;
+			}
+		}
+	}
+
+	.copyright {
+		clear: both;
+		margin-top: 10px;
+		color: #ccc;
+	}
+}

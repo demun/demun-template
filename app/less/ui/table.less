@@ -6,3 +6,243 @@
 ---------------------------------------------------------------
 */
 
+table {
+  background-color: @table-bg;
+}
+caption {
+  padding: @table-cell-padding;
+}
+th {
+  text-align: left;
+}
+
+
+
+.table {
+  width: 100%;
+  max-width: 100%;
+
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: @table-cell-padding;
+        line-height: @line-height;
+        vertical-align: top;
+        border-top: 1px solid @table-border-color;
+
+        &.vertical-m {
+          vertical-align: middle;
+        }
+        &.vertical-t {
+          vertical-align: top;
+        }
+        &.vertical-b {
+          vertical-align: bottom;
+        }
+
+        // 댓글 영역
+        &.reply {
+          vertical-align: middle;
+          padding-left: 37px;
+          padding-top: 20px;
+          color: #006438;
+          background: url('@{img-url}icon-reply-02.gif') no-repeat 15px center;
+        }
+        .reply-inner {
+          background-color: #fff;
+          padding: 20px;
+          margin: 20px 0;
+          max-height: 150px;
+          overflow-y: scroll;
+          border: 1px solid @table-border-color;
+        }
+        .date {
+          color: block;
+          font-size: 95%;
+        }
+
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid @table-border-color;
+    &.bd-active {}
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: 2px solid @table-border-color;
+  }
+
+
+
+  // Nesting
+  .table {
+    background-color: @body-bg;
+  }
+}
+
+
+
+// Bordered version
+//
+// Add borders all around the table and between all the columns.
+
+.table-bordered {
+  // border: 1px solid @table-border-color;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-left: 1px solid @table-border-color;
+        border-top: 1px solid @table-border-color;
+      }
+    }
+  }
+
+  // 처음과 끝은 보어 없엠
+  > caption + thead,
+  > colgroup + thead,
+  > thead,
+  > tbody {
+    > tr {
+      > th:first-child,
+      > td:first-child {
+        border-left: 0;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+      border-bottom-color: @table-border-active;
+      text-align: center;
+    }
+  }
+}
+
+
+
+.table-row-variant(active; @table-bg-active);
+// .table-row-variant(success; #8d9196);
+// .table-row-variant(info; @state-info-bg);
+// .table-row-variant(warning; @state-warning-bg);
+// .table-row-variant(danger; @state-danger-bg);
+
+
+
+
+
+
+.table-01 {
+  // border-top: 1px solid @table-border-active;
+  border-bottom: 1px solid @table-border-active;
+  th {
+    background-color: @talbe-th-bg;
+  }
+
+
+
+  // bootstrap 무효화
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child,
+  > tbody {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 1px solid @table-border-active;
+        // border-top: 0 none;
+      }
+    }
+  }
+
+  // bd-active
+  td,
+  th {
+    &.bd-active {
+      border-bottom: 2px solid @table-border-active;
+    }
+    &.dotted {
+      border-top: 1px dotted #b2b2b2;
+    }
+  }
+
+
+  &.th-bg-01 {
+    border-bottom: 1px solid @table-border-color;
+    tbody {
+      th {
+        color: @link-color;
+        background-color: #fff;
+        border-bottom: 1px solid #666c75;
+      }
+    }
+    th {
+      color: #fff;
+      background-color: #8d9196;
+    }
+
+    // bootstrap 무효화
+    > caption + thead,
+    > colgroup + thead,
+    > thead:first-child,
+    > tbody:first-child {
+      > tr:first-child {
+        > th,
+        > td {
+          border-top-color: #5c616a;
+        }
+      }
+    }
+
+    td,
+    th {
+      &.bd-active {
+        border-color: #5c616a;
+      }
+    }
+
+
+  }
+
+}
+
+
+//  table add
+
+.table {
+  &.table-01 {
+    &.table-0101 {
+      td {
+        margin-left: 35px;
+        background: url('@{img-url}icon-bullet-blue.png') no-repeat 10px 22px;
+        padding: 15px 15px 15px 25px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+

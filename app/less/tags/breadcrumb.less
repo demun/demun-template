@@ -1,0 +1,40 @@
+/* 
+---------------------------------------------------------------
+*
+* breadcrumb.less
+*
+---------------------------------------------------------------
+*/
+
+.breadcrumb {
+	float: right;
+	margin: 24px 0 0;
+	padding: 0;
+	list-style-type: none;
+
+	li {
+		display: inline;
+
+		a {
+			padding: 0 5px;
+			display: inline-block;
+
+			&.icon-home {
+				padding-left: 18px;
+				background: url('@{img-url}icon-home.gif') no-repeat left center;
+			}
+
+			&:after {
+				content: ">";
+				margin-left: 10px;
+
+			}
+
+			&.active:after {
+				content: "";
+				margin-left: 0;
+			}
+		}
+	}
+
+}

@@ -5,3 +5,142 @@
 *
 ---------------------------------------------------------------
 */
+
+.contents {
+	float: right;
+	width: @content-width;
+}
+
+
+
+
+
+
+// current-position
+// --------------------------------------------
+
+.current-position {
+	positon: relative;
+	width: 100%;
+}
+.cp-menu {
+	.ulstyle();
+	.clearfix();
+
+	li {
+		float: left;
+
+		&:first-child a {
+			padding-left: 0;
+		}
+
+		a {
+			display: block;
+			float: left;
+			padding: 10px 25px;
+			color: @link-color;
+			background: url('@{img-url}icon-current-position.gif') no-repeat right center;
+
+
+
+			&.current {
+				font-weight: bold;
+				background: none;
+			}
+
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+
+
+
+// title
+.sub-title-area {
+	position: relative;
+	padding-top: 1px;
+}
+
+.sub-title {
+	font-size: @sub-title-size;
+	letter-spacing: -2px;
+}
+
+.sub-title-01 {
+	font-size: @sub-title-size-01;
+	letter-spacing: -2px;
+}
+
+.sub-blue {
+	color: @sub-title-color;
+}
+
+
+
+// img
+.pos-01 {
+	position: absolute;
+	right: 0;
+	bottom: -23px;
+}
+
+
+
+// border
+.bd-style {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1px;
+	width: 40px;
+
+	&.w_25 {
+		width: 25px;
+	}
+
+}
+.bd-red {
+	background-color: #ff020e;
+}
+
+
+
+// FAQ, CustomerCenter_040500.html
+.faq-box-01 {
+	background: url('@{img-url}faq-box-bg.png') no-repeat left top;
+	padding: 20px 20px 20px 350px;
+	min-height: 210px;
+
+	h3 {
+		font-size: 35px;
+		color: #333;
+	}
+	ul {
+
+		li {
+			background-position: left center;
+			background-repeat: no-repeat;
+			padding-left: 35px;
+			line-height: 2.4;
+
+			&.li-01 {
+				background-image: url('@{img-url}faq-01.png');
+			}
+			&.li-02 {
+				background-image: url('@{img-url}faq-02.png');
+			}
+			&.li-03 {
+				background-image: url('@{img-url}faq-03.png');
+			}
+		}
+	}
+}
+
+
+
+
+
+

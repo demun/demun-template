@@ -13,11 +13,19 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.9.1",
-    "bootstrap": "~3.3.1",
-    "jquery-ui": "1.11.2",
-    "jquery-colorbox": "1.5.14",
-    "magnific-popup": "1.0.0",
-    "massmans-bxslider": "4.1.2"
+    "jquery": "1.11.2",
+    "bootstrap": "*",
+    "modernizr": "*",
+    "retina.js": "*",
+    "slider-revolution": "*",
+    "owl-carousel": "*",
+    "isotope": "*",
+    "countto": "*",
+    "fontawesome": "*",
+    "animations": "*",
+    "matchHeight": "*",
+    "ResponsiveMultiLevelMenu": "*",
+    "magnific-popup": "*",
+    "stellar.js": "*"
   }
 }

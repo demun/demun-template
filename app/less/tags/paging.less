@@ -1,0 +1,65 @@
+/* 
+---------------------------------------------------------------
+*
+* paging.less
+*
+---------------------------------------------------------------
+*/
+
+.paging-area {
+  position: relative;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		// 기본타입 가운데 정렬
+		text-align: center;
+		.clearfix();
+
+		li {
+		    display: inline;
+		    margin: 0;
+		    padding: 0;
+		  a {
+				display: inline-block;
+				padding: 5px 10px;
+				color: #333;
+				border: 1px solid @table-border-color;
+				background-color: #fff;
+				text-decoration: none;
+				background-repeat: no-repeat;
+				background-position: center center;
+				// background-image: url(../images/paging/paging.png);
+
+		        &:hover{
+					color: @paging-color-hover;
+					background-color: @paging-bg-hover;
+		        }
+		        &.active {
+					color: @paging-color-active;
+					background-color: @paging-bg-active;
+		        }
+		        // &.first,
+		        // &.prev,
+		        // &.next,
+		        // &.last {
+		        // 	background-color: #ededed;
+		        // 	&:hover {
+		        // 		color: #333;
+		        // 		background-color: lighten(#ededed, 5%);
+		        // 	}
+		        // }
+
+
+		        span {
+		        	position: absolute;
+		          	display: inline-block;
+		          	text-indent: -9999px;
+		          	padding: 0;
+		        }
+			}
+		}
+	}
+
+}
