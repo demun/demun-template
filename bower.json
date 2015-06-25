@@ -1,6 +1,6 @@
 {
-  "name": "SiteName",
-  "version": "0.0.0",
+  "name": "demun-template",
+  "version": "0.1.0",
   "authors": [
     "demun <hjm01@naver.com>"
   ],
@@ -13,19 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.11.2",
-    "bootstrap": "*",
-    "modernizr": "*",
-    "retina.js": "*",
-    "slider-revolution": "*",
-    "owl-carousel": "*",
-    "isotope": "*",
-    "countto": "*",
-    "fontawesome": "*",
-    "animations": "*",
-    "matchHeight": "*",
-    "ResponsiveMultiLevelMenu": "*",
-    "magnific-popup": "*",
-    "stellar.js": "*"
+    "jquery": "1.11.2"
   }
 }

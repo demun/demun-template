@@ -36,7 +36,7 @@ module.exports = function (grunt) {
           src: [
             '.tmp/*',
             '<%= less.docs.dest %>',
-            '<%= config.dist %>/*'
+            '<%= config.dist %>'
           ]
         }]
       },

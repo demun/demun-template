@@ -1,0 +1,1718 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"radi",
+				"radio-03"
+			],
+			[
+				"radio",
+				"radio-01"
+			],
+			[
+				"browser",
+				"browser	$.browser()"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"ready",
+				"ready	$(document).ready"
+			],
+			[
+				"cu",
+				"current_link"
+			],
+			[
+				"pare",
+				"parentsUntil	.parentsUntil()"
+			],
+			[
+				"les",
+				"less-long-commont	less-long-comment"
+			],
+			[
+				"less",
+				"less	less-middle-comment"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"ov",
+				"ovy	overflow-y: ${1:hidden};"
+			],
+			[
+				"animate",
+				"animate	.animate()"
+			],
+			[
+				"list-styl",
+				"list-style-position"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"an",
+				"andSelf	.andSelf()"
+			],
+			[
+				"ani",
+				"animate	.animate()"
+			],
+			[
+				"fun",
+				"fun	fun"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"table-border-",
+				"table-border-active"
+			],
+			[
+				"intro",
+				"intro-01"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"ove",
+				"overflow-x"
+			],
+			[
+				"thead",
+				"thead-bd-color"
+			],
+			[
+				"fu",
+				"fun	fun"
+			],
+			[
+				"function",
+				"functionInit	functionInit"
+			],
+			[
+				"jquerycdn",
+				"jquerycdn	jqueryCdn"
+			],
+			[
+				"some",
+				"someNode2"
+			],
+			[
+				"con",
+				"console.	console.log()"
+			],
+			[
+				"Boot",
+				"BootstrapTS_fluid"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"conso",
+				"console.	console.dir()"
+			],
+			[
+				"each",
+				"each	.each()"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"sc",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"cs",
+				"css-03	css-03"
+			],
+			[
+				"font-f",
+				"font-family-base"
+			],
+			[
+				"append",
+				"appendTo	.appendTo()"
+			],
+			[
+				"img",
+				"img-wrap"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"ssi-",
+				"ssi-table-02"
+			],
+			[
+				"si",
+				"siblings	.siblings()"
+			],
+			[
+				"slid",
+				"slideUp	.slideUp()"
+			],
+			[
+				"mypage",
+				"mypage-list"
+			],
+			[
+				"canvas",
+				"canvas_height"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"main",
+				"mainFunction"
+			],
+			[
+				"전자금융",
+				"전자금융사기예방서비스"
+			],
+			[
+				"이자",
+				"이자를"
+			],
+			[
+				"type",
+				"type-02"
+			],
+			[
+				"lnb",
+				"lnb-down"
+			],
+			[
+				"row",
+				"rowspan"
+			],
+			[
+				"lis",
+				"lis	list-style"
+			],
+			[
+				"gUl",
+				"gUlHeight"
+			],
+			[
+				"fn",
+				"fn	function"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"bgc",
+				"bgc	background-color: #${1:fff};"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ea",
+				"each	.each()"
+			],
+			[
+				"mouse",
+				"mouseout	mouseout"
+			],
+			[
+				"d",
+				"doctype"
+			],
+			[
+				"b",
+				"bg	background: #${1:000};"
+			],
+			[
+				"attr",
+				"attr	.attr() - single"
+			],
+			[
+				"anim",
+				"animate	animate"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"po",
+				"pos	position: ${1:relative};"
+			],
+			[
+				"rea",
+				"ready	$(document).ready"
+			],
+			[
+				"comm",
+				"commentOne	comment-01"
+			],
+			[
+				"ha",
+				"hasClass	.hasClass"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"re",
+				"ready	$(document).ready"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/html/include/js.html",
+			"settings":
+			{
+				"buffer_size": 1424,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/html/include/head.html",
+			"settings":
+			{
+				"buffer_size": 797,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 9542,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 271,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "jquery\": \"1.11.2\",\n    \"bootstrap\": \"*\",\n    \"modernizr\": \"*\",\n    \"dw-bxslider-4\": \"*\",\n    \"jquery-cycle2\": \"*\",\n    \"colorbox\": \"*\",\n    \"jquery-ui\": \"*\",\n    \"fontawesome\": \"*\"",
+			"settings":
+			{
+				"buffer_size": 180,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1246,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 370.0,
+		"last_filter": "pci",
+		"selected_items":
+		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			],
+			[
+				"text",
+				"Set Syntax: Textile"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"map",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markp",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"en",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"m",
+				"Set Syntax: Markdown"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"re",
+				"ReadmePlease"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"readm",
+				"ReadmePlease"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"javsc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htmlb",
+				"HTMLBeautify"
+			],
+			[
+				"md",
+				"Set Syntax: Markdown"
+			],
+			[
+				"html b",
+				"HTMLBeautify"
+			],
+			[
+				"java b",
+				"Javascript Beautify"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ja b",
+				"Javascript Beautify"
+			],
+			[
+				"sublimeh",
+				"SublimeHighlight: convert to HTML"
+			],
+			[
+				"sublime",
+				"SublimeHighlight: copy to clipboard as HTML"
+			],
+			[
+				"mar b",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"ma",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"js b",
+				"Javascript Beautify"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"m g b",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"jas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"jad",
+				"Set Syntax: Jade"
+			],
+			[
+				"m gi b",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"m git su",
+				"Markdown Preview: Github Flavored Markdown: Export HTML in Sublime Text"
+			],
+			[
+				"m git b",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ma git br",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"ma git b",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"m git br",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"m p g b",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"set c",
+				"Set Syntax: C"
+			],
+			[
+				"markdown ex",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"m p g br",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"markdown ext",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"markdownex",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set markdown",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"set mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mark git bro",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"ma pr git br",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"mark pre git bro",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"PCR",
+				"Package Control: Remove Package"
+			],
+			[
+				"javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sni:fun",
+				"Snippet: fun"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"pac u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"listpa",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 496.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"\\",
+			"&",
+			"/",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Dev/Git/demun-template",
+		"/D/Dev/Git/demun-template/app/html",
+		"/D/Dev/Git/demun-template/app/html/docs/category1",
+		"/D/Dev/Git/demun-template/app/html/docs/category2"
+	],
+	"file_history":
+	[
+		"/D/Dev/Git/demun-template/app/html/docs/category2/page-02.html",
+		"/D/Dev/Git/demun-template/app/html/docs/category2/page-01.html",
+		"/D/Dev/Git/demun-template/app/html/docs/category1/page-02.html",
+		"/D/Dev/Git/demun-template/app/html/include/lnb-bot.html",
+		"/D/Dev/Git/demun-template/app/html/docs/category1/page-01.html",
+		"/C/Users/JongMun/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/JongMun/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000024.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/site/box.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/Gruntfile.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/dist/index.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/index.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/site/sbi.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/autoloan-product/autoloan-product-000010.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000021.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000020.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/autoloan-product/autoloan-product-000021.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/autoloan-product/autoloan-product-000022.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/include/ui/lnb-myautoloan.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/myautoloan/myautoloan-000101.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/myautoloan/myautoloan-000012.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/myautoloan/myautoloan-000011.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/myautoloan/myautoloan-000010.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/myautoloan/myautoloan-000001.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/myautoloan/myautoloan-000002.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/myautoloan/myautoloan-000003.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/myautoloan/myautoloan-000004.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/site/common.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/site/ie6.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/site/ie7.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/site/slider.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/dist/index.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/site/ie8.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000001.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/ui/input.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/tags/banner.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000010.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000011.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/include/head.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/include/js.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/site/slider.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/lib/jquery.cycle.lite.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/tags/quick.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/lib/chili-1.7.pack.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/lib/jquery.cycle.all.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/lib/jquery.easing.1.3.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/ui/table.less",
+		"/D/demuncode/code/Jquery/Example/이미지슬라이더/css/slider.css",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/style.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/site/sbi.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/autoloan-product/autoloan-product-000022.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/autoloan-product/autoloan-product-000010.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/autoloan-product/autoloan-product-000021.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/ui/table.less",
+		"/D/demuncode/code/Jquery/Example/이미지슬라이더2/js/slider.js",
+		"/D/demuncode/code/Jquery/Example/이미지슬라이더/js/slider.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/dist/css/style.css",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/site/ie10.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/site/ie9.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/autoloan/autoloan-000010.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/tags/gnb.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/plugins/responsiveslides.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000104.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000103.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000101.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000102.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000002.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/include/ui/gnb.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000040.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000010.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000011.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/family/family-000012.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/include/ui/lnb-family.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/ui/icon.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/test/index.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/include/ui/lnb-autoloan-product.html",
+		"/C/Users/JongMun/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/center/center-000070.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/tags/gnb.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/js/site/gnb.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/include/js.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/ui/button.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/common/responsive.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/ui/input.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/tags/location.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/family/family-000101.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/family/family-000001.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/family/family-000002.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/family/family-000003.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/family/family-000102.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/family/family-000103.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/family/family-000104.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/include/ui/nav.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/autoloan/autoloan-000010.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/center/center-000030.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/tags/banner.less",
+		"/D/Dev/bootstrap/Gruntfile.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/ui/button.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/tags/lnb.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/common/common.less",
+		"/C/Users/JongMun/.grunt-init/grunt-template/template.js",
+		"/C/Users/JongMun/.grunt-init/grunt-init-test/template.js",
+		"/C/Users/JongMun/.grunt-init/grunt-template/README.md",
+		"/C/Users/JongMun/.grunt-init/grunt-init-test/README.md",
+		"/C/Users/JongMun/.grunt-init/grunt-init-test/.gitignore",
+		"/C/Users/JongMun/.grunt-init/my-template/template.js",
+		"/D/Dev/grunt-template-test/package.json",
+		"/C/Users/JongMun/.grunt-init/grunt-template/.gitignore",
+		"/C/Users/JongMun/.grunt-init/my-template/rename.json",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/dist/test/index.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000022.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000023.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000031.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/docs/html/center/center-000070.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/ui/accordion.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/site/accordion.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/site/lnb.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/js/site/gnb.js",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/app/less/tags/header.less",
+		"/D/Dev/index.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/site/box.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/style.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/center/center-000031.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/common/helperClass.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/less/ui/icon.less",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/center/center-000060.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/html/center/center-000061.html",
+		"/D/workspace/CKB.war/WebContent/docs/UIUX/pub/mobile/app/docs/include/footer.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			"<open folders>",
+			"<open files>",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"scripts",
+			"SiteName",
+			"고색님",
+			"고객만족센터",
+			"원리금균등상환",
+			"연체이자율",
+			"./",
+			"../",
+			"clean",
+			"MY",
+			"my",
+			"MY",
+			"my",
+			"MY",
+			"My",
+			"MY",
+			"my",
+			"MY",
+			"my",
+			"MY",
+			"gif",
+			"FAMILY",
+			"family",
+			"FAMILY",
+			"family",
+			"FAMILY",
+			"Family",
+			"FAMILY",
+			"family",
+			"고색",
+			"gif",
+			"png",
+			".main-page",
+			" width=\"950\" height=\"575\"",
+			"top: 358px; ",
+			"pics",
+			"s",
+			"site",
+			"<img",
+			" style=\"position: absolute; top: 0px; left: 0.0976735975093845px; display: block; z-index: 10; opacity: 1; width: 200px; height: 200px;\"",
+			"slider",
+			"inherit",
+			"../",
+			"0418",
+			"06",
+			"이메일",
+			"문자메세지",
+			"이메일",
+			"0503",
+			"0502",
+			"name=\"radio-0501\"",
+			"radio-04",
+			"pull-right",
+			"함",
+			"전화",
+			"함",
+			"이메일",
+			"동의함",
+			"문자메세지",
+			"imagemin",
+			"top",
+			".m-area",
+			"typeof",
+			"'",
+			"v_d_width",
+			"string_width",
+			"width",
+			"\"",
+			"href=\"\"",
+			"=\"\"",
+			"../images",
+			"중고",
+			"구입자금을",
+			"중고",
+			" list-group-item-warning",
+			"개인(신용)정보 수집 이용",
+			"수집",
+			"(여신 금융거래)",
+			"이용",
+			"수집",
+			"전화",
+			"조회",
+			"전체",
+			"동의함",
+			"수집 이용",
+			"수집",
+			"제3자",
+			"조회",
+			">\n",
+			".icon-circle",
+			".attr('checked', false)",
+			"$(this).attr('value')",
+			"$(this).is(':checked') && ",
+			"name",
+			"휴대폰",
+			"#",
+			"radio",
+			"span",
+			"div",
+			"gnb-bg-a",
+			"div",
+			"radio-01",
+			"주민등록번호",
+			"유효기간",
+			".select_subject",
+			"휴대폰",
+			"신용카드",
+			"중고상용건설기계구매",
+			"중고승용차구매",
+			"상환방식",
+			"연체",
+			"tb-list",
+			" class=\"w_160\"",
+			"취급수수료",
+			"구매",
+			"\"\"",
+			"460",
+			"324",
+			"img-",
+			"구매",
+			"중고상용건설기계",
+			"담보",
+			"오토론상품",
+			"중고승용차구매",
+			"소개",
+			" FAMILY",
+			" family",
+			"select"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"고객님",
+			"include",
+			"<div class=\"banner banner-03\">\n	include \"../include/banner.html\"\n</div>",
+			"id"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/html/include/js.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1027,
+								1027
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/html/include/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								797,
+								797
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1199,
+								1199
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 513.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								264
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								571,
+								571
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 323.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 259.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 130.0
+	},
+	"output.sftp":
+	{
+		"height": 207.0
+	},
+	"pinned_build_system": "",
+	"project": "demun-template.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"index.html",
+				"Publisher\\node_modules\\grunt-contrib-less\\node_modules\\less\\test\\sourcemaps\\index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "demun",
+		"selected_items":
+		[
+			[
+				"demun",
+				"D:\\demuncode\\demunCode.sublime-project"
+			],
+			[
+				"wiki",
+				"D:\\demun.github.com.wiki\\demun-wiki.sublime-project"
+			],
+			[
+				"",
+				"D:\\demuncode\\blog\\blog.sublime-project"
+			],
+			[
+				"blog",
+				"D:\\demuncode\\blog\\blog.sublime-project"
+			],
+			[
+				"b",
+				"D:\\demuncode\\blog\\blog.sublime-project"
+			],
+			[
+				"templa",
+				"D:\\demuncode\\Templates\\templates.sublime-project"
+			],
+			[
+				"test",
+				"D:\\Dev\\test\\dev-test.sublime-project"
+			],
+			[
+				"sbi2",
+				"D:\\masstige_project\\sbi2\\sbi2.sublime-project"
+			],
+			[
+				"icom",
+				"D:\\masstige_project\\i-components\\icomponents.sublime-project"
+			],
+			[
+				"codrei",
+				"D:\\masstige_project\\CoreiId\\coreId.sublime-project"
+			],
+			[
+				"sbi",
+				"D:\\masstige_project\\sbi2\\sbi2.sublime-project"
+			],
+			[
+				"freet",
+				"D:\\masstige_project\\freewebclub-template\\freewebclub-template.sublime-project"
+			],
+			[
+				"tests",
+				"D:\\masstige_project\\TestServer\\testServer.sublime-project"
+			],
+			[
+				"devte",
+				"D:\\Dev\\test\\dev-test.sublime-project"
+			],
+			[
+				"es",
+				"D:\\masstige_project\\esupro\\esupro.sublime-project"
+			],
+			[
+				"jqu",
+				"D:\\demuncode\\code\\jquery_2.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 370.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"@brand-primary"
+			]
+		],
+		"width": 360.0
+	},
+	"selected_group": 2,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
