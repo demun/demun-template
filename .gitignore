@@ -3,17 +3,14 @@
 기획
 디자인
 psd
-working
 
-# 필요없는 폴더
-3DPrinting
-PSD
+
 
 # Folders to ignore
 bower_components
 node_modules
 dist
-
+.tmp
 
 
 # Ignore docs files
