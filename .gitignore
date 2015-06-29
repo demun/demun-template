@@ -1,13 +1,9 @@
 # 프로젝트에 사용되는 폴더
 작업폴더
-기획
-디자인
 psd
 working
 
-# 필요없는 폴더
-3DPrinting
-PSD
+
 
 # Folders to ignore
 bower_components
