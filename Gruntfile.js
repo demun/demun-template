@@ -42,7 +42,7 @@ module.exports = function (grunt) {
       server: '.tmp'
     },
 
-// usemin confif
+// usemin config
     useminPrepare: {
       options: {
         dest: '<%= config.dist %>'
