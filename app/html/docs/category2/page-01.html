@@ -4,7 +4,7 @@
 <!--[if IE 8]>        <html lang="ko" class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="ko" class="no-js"><!--<![endif]-->
 <head>
-	@@include('head.html', {"title": "page-01 | @@title"})
+	@@include('../include/head.html', {"title": "page-01 | @@title"})
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 <section class="main">
 	<div class="wrapper">
 		<h1>main</h1>
-		include "../include/other/lorem.html"
+		@@include('../include/other/lorem.html')
 	</div>
 </section>
 
@@ -32,7 +32,7 @@
 
 
 
-include "../include/js.html"
+@@include('../include/js.html')
 
 
 

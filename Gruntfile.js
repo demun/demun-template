@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-// npm install --save-dev grunt grunt-contrib-csslint grunt-usemin grunt-filerev grunt-contrib-concat grunt-contrib-uglify grunt-contrib-cssmin time-grunt load-grunt-tasks grunt-contrib-clean grunt-contrib-copy grunt-includes grunt-contrib-less jshint-stylish grunt-concurrent grunt-contrib-watch grunt-newer grunt-notify grunt-contrib-jshint grunt-contrib-connect grunt-contrib-livereload grunt-wiredep grunt-autoprefixer grunt-contrib-imagemin grunt-filerev
+// npm i -D grunt grunt-autoprefixer grunt-concurrent grunt-contrib-clean grunt-contrib-concat grunt-contrib-connect grunt-contrib-copy grunt-contrib-csslint grunt-contrib-cssmin grunt-contrib-imagemin grunt-contrib-jshint grunt-contrib-less grunt-contrib-uglify grunt-contrib-watch grunt-include-replace grunt-newer grunt-notify grunt-prettify grunt-usemin grunt-wiredep jshint-stylish load-grunt-tasks time-grunt 
 
   'use strict';
 
@@ -17,7 +17,7 @@ module.exports = function (grunt) {
       // dist: 'FinishCode',
       app: 'app',
       dist: 'dist',
-      gruntfile: 'grunt'
+      gruntfile: 'gruntConfig'
   };
 
   // Define the configuration for all the tasks
@@ -32,10 +32,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           dot: true,
-          nonull: true,
+          // nonull: true,
           src: [
             '.tmp/*',
-            '<%= less.docs.dest %>',
             '<%= config.dist %>'
           ]
         }]
@@ -43,47 +42,35 @@ module.exports = function (grunt) {
       server: '.tmp'
     },
 
-    jshint: {
-        options: {
-            jshintrc: '<%= config.gruntfile %>/.jshintrc',
-            reporter: require('jshint-stylish')
-        },
-        all: [
-            'Gruntfile.js',
-            '<%= config.app %>/scripts/{,*/}*.js',
-            '!<%= config.app %>/scripts/style-switcher.js',
-            '!<%= config.app %>/scripts/tweetscroll.js'
-        ]
+// usemin confif
+    useminPrepare: {
+      options: {
+        dest: '<%= config.dist %>'
+      },
+      html: ['<%= config.app %>/index.html']
     },
 
+    usemin: {
+      options: {
+        assetsDirs: '<%= config.dist %>'
+      },
+      html: ['<%= config.dist %>/{,*/}*.html'],
+      css: ['<%= config.dist %>/css/{,*/}*.css']
+    },
+    
+// css task
     less: {
-        docs: {
-            src: '<%= config.app %>/less/industry/template-style.less',
-            dest: '.tmp/styles/template-style.css'
+        dist: {
+            src: '<%= config.app %>/less/style.less',
+            dest: '.tmp/css/style.css'
+        }
+    },
+    csslint: {
+        options: {
+            csslintrc: 'gruntConfig/.csslintrc'
         },
-        colorDefault: {
-            src: '<%= config.app %>/less/industry/color-default.less',
-            dest: '.tmp/styles/color-default.css'
-        },
-        linecons: {
-            src: '<%= config.app %>/less/industry/linecons.less',
-            dest: '.tmp/styles/linecons.css'
-        },
-        pixons: {
-            src: '<%= config.app %>/less/industry/pixons.less',
-            dest: '.tmp/styles/pixons.css'
-        },
-        responsive: {
-            src: '<%= config.app %>/less/industry/responsive.less',
-            dest: '.tmp/styles/responsive.css'
-        },
-        retina: {
-            src: '<%= config.app %>/less/industry/retina.less',
-            dest: '.tmp/styles/retina.css'
-        },
-        styleSwitcher: {
-            src: '<%= config.app %>/less/industry/style-switcher.less',
-            dest: '.tmp/styles/style-switcher.css'
+        dist: {
+            src: '.tmp/css/style.css'
         }
     },
     autoprefixer: {
@@ -99,38 +86,127 @@ module.exports = function (grunt) {
                 'Safari >= 6'
             ]
         },
-        docs: {
-            src: '.tmp/styles/{,*/}*.css'
+        dist: {
+            src: '.tmp/css/{,*/}*.css'
         }
     },
+    csscomb: {
+        options: {
+            config: 'gruntConfig/.csscomb.json'
+        },
+        dist: {
+            src: '.tmp/css/style.css',
+            dest: '.tmp/css/style.css'
+        }
+    },
+    cssmin: {
+        options: {
+            compatibility: 'ie8',
+            keepSpecialComments: 1,
+            // default - '!'가 붙은 주석은 보존,
+            // 1 - '!'가 붙은 주석 중 첫번째 주석만 보존
+            // 0 - 모든 주석 제거
+            // noAdvanced: true,
+        },
+        // dist: {
+        //     src: '.tmp/css/style.css',
+        //     dest: '.tmp/css/style.min.css',
+        // }
+    },
 
-    includes: {
-        build: {
-            cwd: '<%= config.app %>/html/docs/',
-            src: ['**/*.html'],
-            dest: '<%= config.dist %>/',
+    includereplace: {
+        dist: {
             options: {
-                flatten: true,
-                includePath: '<%= config.app %>/html/include/'
-            }
+                includesDir: '<%= config.app %>/html/include/',
+                globals: {
+                  title: 'demun-template-test'
+                }
+            },
+            files: [
+                {
+                    expand: true,
+                    cwd: '<%= config.app %>/html/docs/',
+                    src: '**/*.html',
+                    dest: '<%= config.dist %>/'
+                }
+            ],
         }
     },
-    useminPrepare: {
-      options: {
-        dest: '<%= config.dist %>'
-      },
-      html: ['<%= config.app %>/index.html']
+    prettify: {
+        options: {
+            'indent': 4,
+            'condense': true,
+            'indent_inner_html': true,
+            'unformatted': [
+                'a',
+                'pre'
+            ]
+        },
+        dist: {
+            expand: true,
+            cwd: '<%= config.dist %>/',
+            ext: '.html',
+            src: ['**/*.html'],
+            dest: '<%= config.dist %>/'
+        },
     },
 
-    usemin: {
-      options: {
-        assetsDirs: [
-          '<%= config.dist %>'
+// js task
+    jshint: {
+        options: {
+            jshintrc: '<%= config.gruntfile %>/.jshintrc',
+            reporter: require('jshint-stylish')
+        },
+        all: [
+            'Gruntfile.js',
+            '<%= config.app %>/js/{,*/}*.js',
+            '!<%= config.app %>/js/lib/{,*/}*.js'
         ]
-      },
-      html: ['<%= config.dist %>/{,*/}*.html'],
-      css: ['<%= config.dist %>/styles/{,*/}*.css']
     },
+    concat: {
+        generated: {
+          files: [
+            {
+              src: 'bower_components/jquery/dist/jquery.js',
+              dest: '.tmp/concat/js/jquery.js',
+            },
+            {
+              src: [
+                'bower_components/bootstrap/dist/js/bootstrap.js',
+                'bower_components/colorbox/jquery.colorbox.js',
+              ],
+              dest: '.tmp/concat/js/plugins.js'
+            },
+            {
+              src: 'app/js/site/*.js',
+              dest: 'dist/js/concat/site.js'
+            }
+          ]
+        },
+    },
+    uglify: {
+        generated: {
+          files: [
+            {
+              src: '.tmp/concat/js/jquery.js',
+              dest: 'dist/js/jquery.js',
+            },
+            {
+              src: '.tmp/concat/js/plugins.js',
+              dest: 'dist/js/plugins.js',
+            },
+            {
+              src: 'dist/js/concat/site.js',
+              dest: 'dist/js/site.js'
+            }
+          ]
+        },
+        // dist: {
+        //     src: 'dist/js/concat/site.js',
+        //     dest: 'dist/js/site.js'
+        // }
+    },
+
     imagemin: {
         options: {
             title: '빌드완료',  // optional
@@ -147,25 +223,18 @@ module.exports = function (grunt) {
         }
     },
     watch: {
+        options: { livereload: true },
         bower: {
             files: ['bower.json'],
             tasks: ['wiredep']
         },
         gruntfile: {
             files: ['Gruntfile.js'],
-            tasks: ['newer:jshint'],
-            options: {
-                livereload: true
-            }
+            tasks: ['newer:jshint']
         },
         js: {
-            files: [
-                '<%= config.app %>/scripts/**/*.js'
-            ],
-            tasks: ['newer:jshint','useminPrepare','concat','uglify','usemin'],
-            options: {
-                livereload: true
-            }
+            files: ['<%= config.app %>/js/**/*.js'],
+            tasks: ['newer:jshint','useminPrepare','concat','uglify','usemin']
         },
         less: {
             files: ['<%= config.app %>/less/**/*.less'],
@@ -173,17 +242,11 @@ module.exports = function (grunt) {
         },
         html: {
             files: ['<%= config.app %>/html/**/*.html'],
-            tasks: ['useminPrepare','includes','usemin:html'],
-            options: {
-                livereload: true,
-            }
+            tasks: ['useminPrepare','includereplace','usemin:html']
         },
         img: {
             files: ['<%= config.app %>/images/**/*.{gif,jpeg,jpg,png}'],
-            tasks: ['newer:imagemin'],
-            options: {
-                livereload: true,
-            }
+            tasks: ['newer:imagemin']
         }
     },
 
@@ -210,78 +273,6 @@ module.exports = function (grunt) {
         //     src: '*.*',
         //     dest: '<%= config.dist %>/fonts/'
         // },
-        // fontawesome
-        {
-            expand: true,
-            dot: true,
-            cwd: 'bower_components/fontawesome/fonts',
-            dest: '<%= config.dist %>/fonts',
-            src: ['*.*']
-        },
-        // slider-revolution - assets, font, images
-        {
-            expand: true,
-            dot: true,
-            cwd: 'bower_components/slider-revolution/src/assets',
-            dest: '<%= config.dist %>/assets',
-            src: ['**/*.*']
-        },
-        {
-            expand: true,
-            dot: true,
-            cwd: 'bower_components/slider-revolution/src/font',
-            dest: '<%= config.dist %>/fonts',
-            src: ['**/*.*']
-        },
-        {
-            expand: true,
-            dot: true,
-            cwd: 'bower_components/slider-revolution/src/images',
-            dest: '<%= config.dist %>/images',
-            src: ['**/*.*']
-        },
-        // owl-carousel
-        {
-            expand: true,
-            dot: true,
-            cwd: 'bower_components/owl-carousel/owl-carousel/',
-            dest: '<%= config.dist %>/styles',
-            src: [
-                '*.{gif,png}'
-            ]
-        },
-        // ResponsiveMultiLevelMenu
-        {
-          expand: true,
-          dot: true,
-          cwd: 'bower_components/ResponsiveMultiLevelMenu/fonts',
-          src: ['*.{.eot,svg,ttf,woff}'],
-          dest: '<%= config.dist %>/fonts'
-        },
-        {
-          expand: true,
-          dot: true,
-          cwd: 'bower_components/ResponsiveMultiLevelMenu/images',
-          src: '*.png',
-          dest: '<%= config.dist %>/images'
-        },
-        // linecons
-        {
-          expand: true,
-          dot: true,
-          cwd: '<%= config.app %>/fonts/linecons',
-          src: ['*.{.eot,svg,ttf,woff}'],
-          dest: '<%= config.dist %>/fonts'
-        },
-        // pixons
-        {
-          expand: true,
-          dot: true,
-          cwd: '<%= config.app %>/fonts/pixons',
-          src: ['*.{.eot,svg,ttf,woff}'],
-          dest: '<%= config.dist %>/fonts'
-        },
-
         // bootstrap fonts
         {
           expand: true,
@@ -312,12 +303,6 @@ module.exports = function (grunt) {
   });
 
 
-
-  grunt.registerTask('server', function (target) {
-    grunt.log.warn('`server` 는 사용되지 않습니다. 다음부터는 `grunt serve` 를 사용하세요');
-    grunt.task.run([target ? ('serve:' + target) : 'serve']);
-  });
-
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
         return grunt.task.run(['connect', 'watch']);
@@ -331,23 +316,78 @@ module.exports = function (grunt) {
 
   });
 
+  grunt.registerTask('html', [
+    'clean:dist',
+    'useminPrepare',
+    'includereplace',
+    'usemin:html',
+    'prettify'
+  ]);
+  grunt.registerTask('style', [
+    'clean:dist',
+    'useminPrepare',
+    'less',
+    'csslint',
+    'autoprefixer',
+    'csscomb',
+    'concat',
+    'uglify',
+    'cssmin:generated',
+    'usemin:css'
+  ]);
+  grunt.registerTask('js', [
+    'clean:dist',
+    'useminPrepare',
+    'newer:jshint',
+    // 'concat:generated',
+    'concat:generated',
+    'uglify:generated'
+    // 'usemin'
+  ]);
+
   grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
-    'includes',
+    'includereplace',
+    // 'usemin:html',
+    'prettify',
+
     'less',
+    'csslint',
     'autoprefixer',
-    'concurrent:dist',
+    'csscomb',
     'concat',
-    'cssmin',
     'uglify',
+    'cssmin:generated',
+    // 'usemin:css',
+
+    'newer:jshint',
+    'concat:generated',
+    'uglify:generated',
+
+    'usemin',
+
+    'concurrent:dist',
     'copy:dist',
-    'usemin'
   ]);
 
   grunt.registerTask('default', [
-    'newer:jshint',
     'build'
+    // 'clean:dist',
+    // 'useminPrepare',
+    // 'includereplace',
+    // 'less',
+    // 'csslint',
+    // 'autoprefixer',
+    // 'csscomb',
+    // 'cssmin',
+    // 'newer:jshint',
+    // 'concat',
+    // 'uglify',
+    // 'prettify',
+    // 'concurrent:dist',
+    // 'copy:dist',
+    // 'usemin'
   ]);
 
 

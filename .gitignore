@@ -1,7 +1,6 @@
 # 프로젝트에 사용되는 폴더
 작업폴더
 psd
-working
 
 
 
@@ -9,7 +8,7 @@ working
 bower_components
 node_modules
 dist
-
+.tmp
 
 
 # Ignore docs files

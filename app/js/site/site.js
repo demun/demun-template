@@ -9,7 +9,7 @@
 (function(){
 	'use strict';
 
-
+	console.log('site.js test');
 
 	/**
 	 * 부드러운 스크롤 이동
@@ -165,19 +165,19 @@
 	//  * 
 	//  * 
 	//  */
-	$('.bx-slider-01 .bxslider').bxSlider({
-		auto: true, 			// 자동시작
-		autoControls: false, 	// 시작,멈춤버튼
-		// captions: true,			// 캡션
-		pager: false, 			// 페이징버튼
-		controls: false
-		// minSlides: 5,
-		// maxSlides: 5,
-		// moveSlides: 1, 			// 1개씩 이동
-		// slideWidth: 250,
-		// slideMargin: 0
-		// infiniteLoop: false
-	});
+	// $('.bx-slider-01 .bxslider').bxSlider({
+	// 	auto: true, 			// 자동시작
+	// 	autoControls: false, 	// 시작,멈춤버튼
+	// 	// captions: true,			// 캡션
+	// 	pager: false, 			// 페이징버튼
+	// 	controls: false
+	// 	// minSlides: 5,
+	// 	// maxSlides: 5,
+	// 	// moveSlides: 1, 			// 1개씩 이동
+	// 	// slideWidth: 250,
+	// 	// slideMargin: 0
+	// 	// infiniteLoop: false
+	// });
 
 	
 	
