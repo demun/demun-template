@@ -3,7 +3,8 @@
 기획
 디자인
 psd
-working
+.tmp
+.sass-cache
 
 # 필요없는 폴더
 3DPrinting
@@ -30,7 +31,6 @@ _site
 *.swo
 *.swp
 *.vi
-*.zip
 *~
 
 # OS or Editor folders
