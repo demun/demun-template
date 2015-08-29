@@ -13,6 +13,10 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.11.2"
+    "jquery": "1.11.3",
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "colorbox": "~1.6.1"
   }
 }
