@@ -1,19 +1,13 @@
 # 프로젝트에 사용되는 폴더
 작업폴더
 psd
-<<<<<<< HEAD
-.tmp
-.sass-cache
-=======
->>>>>>> a3cf5b36bfef1b8d2ebf633e74603452da95144c
-
-
 
 # Folders to ignore
 bower_components
 node_modules
 dist
 .tmp
+.sass-cache
 
 
 # Ignore docs files
