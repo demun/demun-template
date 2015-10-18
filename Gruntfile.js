@@ -223,10 +223,10 @@ module.exports = function (grunt) {
     },
     watch: {
         options: { livereload: true },
-        bower: {
-            files: ['bower.json'],
-            tasks: ['wiredep']
-        },
+        // bower: {
+        //     files: ['bower.json'],
+        //     tasks: ['wiredep']
+        // },
         gruntfile: {
             files: ['Gruntfile.js'],
             tasks: ['newer:jshint']
