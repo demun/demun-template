@@ -13,19 +13,15 @@ module.exports = function (grunt) {
 
   // Configurable paths
   var appConfig = {
-      // app: 'SourceCode',
-      // dist: 'FinishCode',
       app: 'app',
       dist: 'dist',
-      gruntfile: 'gruntConfig'
+      gruntfile: 'grunt'
   };
 
-  // Define the configuration for all the tasks
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
 
-    // Project settings
     config: appConfig,
 
     clean: {
@@ -67,7 +63,7 @@ module.exports = function (grunt) {
     },
     csslint: {
         options: {
-            csslintrc: 'gruntConfig/.csslintrc'
+            csslintrc: 'grunt/.csslintrc'
         },
         dist: {
             src: '.tmp/css/style.css'
@@ -92,7 +88,7 @@ module.exports = function (grunt) {
     },
     csscomb: {
         options: {
-            config: 'gruntConfig/.csscomb.json'
+            config: 'grunt/.csscomb.json'
         },
         dist: {
             src: '.tmp/css/style.css',
@@ -174,6 +170,9 @@ module.exports = function (grunt) {
               src: [
                 'bower_components/bootstrap/dist/js/bootstrap.js',
                 'bower_components/colorbox/jquery.colorbox.js',
+                'bower_components/jquery-ui/jquery-ui.js',
+                'bower_components/magnific-popup/jquery.magnific-popup.js',
+                'bower_components/massmans-bxslider/jquery.bxslider.js',
               ],
               dest: '.tmp/concat/js/plugins.js'
             },
@@ -265,14 +264,22 @@ module.exports = function (grunt) {
     copy: {
       dist: {
         files: [
-        // // 나눔고딕 폰트 사용시 
-        // {
-        //     expand: true,
-        //     dot: true,
-        //     cwd: '<%= config.app %>/fonts/NanumGothic',
-        //     src: '*.*',
-        //     dest: '<%= config.dist %>/fonts/'
-        // },
+        // 나눔고딕 폰트 사용시 
+        {
+            expand: true,
+            dot: true,
+            cwd: '<%= config.app %>/fonts/NanumGothic',
+            src: '*.*',
+            dest: '<%= config.dist %>/fonts/'
+        },
+        // massmans-bxslider
+        {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/massmans-bxslider',
+            src: 'images/{,*/}*.{gif,jpeg,jpg,png}',
+            dest: '<%= config.dist %>'
+        },
         // bootstrap fonts
         {
           expand: true,
@@ -293,7 +300,8 @@ module.exports = function (grunt) {
     // 다중 태스크를 병렬로 실행하기
     concurrent: {
         server: [
-          'copy:styles'
+          'copy'
+          // 'copy:styles'
         ],
         dist: [
           // 'copy:styles', // css 복사, less 사용시 의미없음
