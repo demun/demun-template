@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 
-	include "head.html"
+	@@include('../include/head.html')
 	<title>title</title>
 
 </head>
@@ -12,7 +12,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="test-bxSlider">
+		<div class="test-bxSlider" style="width: 730px; margin: 30px auto;">
 		    <ul class="bxslider">
 		      <li><img src="http://bxslider.com/images/730_200/tree_root.jpg" title="Funky roots" /></li>
 		      <li><img src="http://bxslider.com/images/730_200/hill_road.jpg" title="The long and winding road" /></li>
@@ -29,7 +29,7 @@
 
 
 <!-- js -->
-include "js.html"
+@@include('../include/js.html')
 
 
 <script>
