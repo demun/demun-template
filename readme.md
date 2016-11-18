@@ -1,27 +1,37 @@
 # install
 
 
-grunt, bower, yeoman 한번에 설치하기
+grunt, bower, yeoman 등이 설치가 안되어 있다면 한번에 설치
 
-```
+```sh
 npm install -g grunt-cli bower yo
 ```
 
 
+`demun-template` 을 클론 또는 다운로드 받았다면 이 폴더위치에서 `npm install`
 
-tem.sh 파일을 콘솔창에서 실행
-
+```sh
+npm install   # 폴더에 있는 package.json 을 바탕으로 플러그인 설치
+bowr install  # bower.json 을 바탕으로 플러그인 설치
 ```
-tem.sh projectFolder
+
+
+# 실행
+
+`watch` 를 가동해 실시간 감시하면서 `grunt` 실행
+
+```sh
+grunt serve
 ```
 
 
-Gruntfile.js, bower.json, grunt serve 실행됨.
 
+
+## 소개
 
 여기서 설치되는 모듈
 
-```
+```sh
 jquery bootstrap jquey-ui bxslider colorbox magnific-popup
 ```
 
@@ -30,42 +40,42 @@ jquery bootstrap jquey-ui bxslider colorbox magnific-popup
 grunt 에서 설치되는 모듈
 
 ```
-grunt 
-grunt-contrib-csslint 
-grunt-contrib-cssmin 
-grunt-contrib-clean 
-grunt-contrib-concat 
-grunt-contrib-connect 
-grunt-contrib-copy 
-grunt-contrib-jshint 
-grunt-contrib-imagemin 
-grunt-contrib-less 
-grunt-contrib-livereload 
-grunt-contrib-uglify 
-grunt-contrib-watch 
-grunt-autoprefixer 
-grunt-concurrent 
-grunt-includes 
-grunt-filerev 
-grunt-newer 
-grunt-notify 
-grunt-usemin 
-grunt-wiredep 
-jshint-stylish 
-load-grunt-tasks 
-time-grunt 
+grunt
+grunt-contrib-csslint
+grunt-contrib-cssmin
+grunt-contrib-clean
+grunt-contrib-concat
+grunt-contrib-connect
+grunt-contrib-copy
+grunt-contrib-jshint
+grunt-contrib-imagemin
+grunt-contrib-less
+grunt-contrib-livereload
+grunt-contrib-uglify
+grunt-contrib-watch
+grunt-autoprefixer
+grunt-concurrent
+grunt-includes
+grunt-filerev
+grunt-newer
+grunt-notify
+grunt-usemin
+grunt-wiredep
+jshint-stylish
+load-grunt-tasks
+time-grunt
 ```
 
 
 bower 에서 설치되는 플러그인
 
 ```
-jquery 
-bootstrap 
-jquery-ui 
-jquery-colorbox 
-magnific-popup 
-massmans-bxslider 
+jquery
+bootstrap
+jquery-ui
+jquery-colorbox
+magnific-popup
+massmans-bxslider
 ```
 
 
@@ -78,22 +88,13 @@ massmans-bxslider
 
 
 
-# bower
+# 플러그인 사용예제
 
 
+test 폴더에 예제 파일 있음
 
 
-
-## scripts/vendor.js
-
-
-scripts 폴더에 vendor.js 로 사용되는 스크립트
-
-
-
-
-
-- jquery
+### jquery
 
 jquery 는 vender.js 로 사용
 
@@ -105,92 +106,7 @@ jquery 는 vender.js 로 사용
 
 
 
-## scripts/plugins.js
-
-
-scripts 폴더에 plugins.js 로 병합되는 자바스크립트
-
-
-
-- bootstrap
-
-fonts 복사해야됨.
-
-
-```html
-<!-- css file -->
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-
-<!-- js file -->
-<script src="bower_components/bootstrap/js/affix.js"></script>
-<script src="bower_components/bootstrap/js/alert.js"></script>
-<script src="bower_components/bootstrap/js/dropdown.js"></script>
-<script src="bower_components/bootstrap/js/tooltip.js"></script>
-<script src="bower_components/bootstrap/js/modal.js"></script>
-<script src="bower_components/bootstrap/js/transition.js"></script>
-<script src="bower_components/bootstrap/js/button.js"></script>
-<script src="bower_components/bootstrap/js/popover.js"></script>
-<script src="bower_components/bootstrap/js/carousel.js"></script>
-<script src="bower_components/bootstrap/js/scrollspy.js"></script>
-<script src="bower_components/bootstrap/js/collapse.js"></script>
-<script src="bower_components/bootstrap/js/tab.js"></script>
-```
-
-Gruntfile.js 에서 이미지 복사해야됨.
-
-
-```javascript
-// bootstrap fonts
-{
-    expand: true,
-    dot: true,
-    cwd: 'bower_components/bootstrap/dist',
-    src: 'fonts/*',
-    dest: '<%= config.dist %>'
-}
-```
-
-
-
-
-
-
-
-- jquery ui
-
-이미지 복사.
-
-
-```html
-<!-- css file -->
-<link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css">
-
-<!-- js file -->
-<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-```
-
-Gruntfile.js 에서 이미지 복사해야됨.
-
-
-```javascript
-// jquery ui 사용시
-{
-    expand: true,
-    dot: true,
-    cwd: 'bower_components/jquery-ui/themes/smoothness/',
-    dest: '<%= config.dist %>/styles',
-    src: 'images/*'
-}
-```
-
-
-
-
-
-
-
-
-- bxSlider
+### bxSlider
 
 bxSlider 는 massmans-bxslider 사용    
 https://github.com/massimans/bxslider-4    
@@ -204,8 +120,6 @@ https://github.com/massimans/bxslider-4
 <!-- js file -->
 <script src="bower_components/massmans-bxslider/jquery.bxslider.js"></script>
 
-
-
 <!-- 사용법 -->
 <ul class="bxslider">
     <li><img src="/images/pic1.jpg" /></li>
@@ -213,22 +127,6 @@ https://github.com/massimans/bxslider-4
     <li><img src="/images/pic3.jpg" /></li>
     <li><img src="/images/pic4.jpg" /></li>
 </ul>
-```
-
-
-Gruntfile.js 에서 이미지 복사해야됨.
-
-
-```javascript
-{
-    expand: true,
-    dot: true,
-    cwd: 'bower_components/massmans-bxslider/images',
-    dest: '<%= config.dist %>/images',
-    src: [
-        '*.{ico,png,gif}'
-    ]
-}
 ```
 
 
@@ -243,9 +141,7 @@ plugins 를 사용할경우 html 에서 아래구문 추가해야 됨
 
 
 
-- colorbox
-
-
+### colorbox
 
 ```html
 <!-- css file -->
@@ -256,29 +152,8 @@ plugins 를 사용할경우 html 에서 아래구문 추가해야 됨
 ```
 
 
-Gruntfile.js 에서 이미지 복사해야됨.
 
-```javascript
-{
-    expand: true,
-    dot: true,
-    cwd: 'bower_components/jquery-colorbox/example5/images',
-    dest: '<%= config.dist %>/images',
-    src: [
-        '*.{ico,png,gif}'
-    ]
-}
-```
-
-
-
-
-
-
-
-- magnific-popup
-
-
+### magnific-popup
 
 ```html
 <!-- css file -->
@@ -287,25 +162,3 @@ Gruntfile.js 에서 이미지 복사해야됨.
 <!-- js file -->
 <script src="bower_components/magnific-popup/jquery.magnific-popup.js"></script>
 ```
-
-
-
-
-
-
-
-
-
-
-
-## scripts/scripts.js
-
-
-scripts 폴더에 scripts.js 로 병합되는 자바스크립트
-
-
-사이트에서 사용하는 사용자 js 로 빌드후 scripts.js 로 만들어짐.
-
-
-
-
